@@ -1,6 +1,6 @@
-# XmlEntityResourceBoundary 0.1.0
+# XmlEntityResourceBoundary 0.1.1
 
-作者：dhtfish98。本项目独立实现一个范围有限的 XML 解析入口，使用 Python 标准库的 Expat 绑定处理语法，并在自己的入口上限制输入字节数、内部实体的声明数量/替换体大小/递归深度/预计算展开大小，以及保留在解析树中的名称、文本和属性值的总字节数。外部 DTD、外部实体和参数实体默认拒绝。它返回元素、属性和文本组成的小型树；不是通用 XML 处理器。
+作者：dhtfish98。本项目独立实现一个范围有限的 XML 解析入口，使用 Python 标准库的 Expat 绑定处理语法，并在自己的入口上限制输入字节数、内部实体的声明数量/替换体大小/递归深度/预计算展开大小，以及保留在解析树中的名称、文本和属性值的总字节数。外部 DTD、外部实体和参数实体默认拒绝。它返回元素、属性和文本组成的小型树；不是通用 XML 处理器。版本与署名更正范围见 [版本记录](VERSION_STATUS.md)。
 
 实现位于 [src/xml_entity_resource_boundary](../src/xml_entity_resource_boundary)，测试位于 [tests](../tests)，许可证与说明集中在「项目文档」。从仓库根目录运行验证后，测试日志、分发包、安装环境和实验收据统一写入 `Build`；这些生成内容不会提交。`src` 和 `tests` 仅保存源码。
 

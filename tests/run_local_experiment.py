@@ -78,7 +78,7 @@ def run(output: Path) -> dict[str, object]:
     }
     return {
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
-        "version": "0.1.0",
+        "version": "0.1.1",
         "environment": "owned local marker file and Python Expat parser; no network",
         "inputs": {
             "external_xml_sha256": _digest(external_xml),

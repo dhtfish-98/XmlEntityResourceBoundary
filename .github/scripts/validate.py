@@ -29,7 +29,7 @@ SOURCE_FILES = (
     "tests/run_local_experiment.py",
     "tests/test_xml_boundary.py",
 )
-VERSION = "0.1.0"
+VERSION = "0.1.1"
 
 
 def digest(data: bytes) -> str:
@@ -302,7 +302,7 @@ def main() -> int:
         )
         checks["author_version_license"] = (
             "dhtfish98" in (DOCUMENTS / "LICENSE").read_text()
-            and "0.1.0" in (SOURCE / "src/xml_entity_resource_boundary/__init__.py").read_text()
+            and VERSION in (SOURCE / "src/xml_entity_resource_boundary/__init__.py").read_text()
         )
         checks["source_tree_only_expected_files"] = sorted(
             [".gitignore", "pyproject.toml"] + [
