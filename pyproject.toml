@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling>=1.25,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "xml-entity-resource-boundary"
+version = "0.1.0"
+description = "Bound XML entity expansion and deny external resources in a narrow parser"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "dhtfish98" }]
+dependencies = []
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: Security",
+  "Topic :: Text Processing :: Markup :: XML",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/xml_entity_resource_boundary"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "/src",
+  "/tests",
+  "/pyproject.toml",
+  "/LICENSE",
+]
